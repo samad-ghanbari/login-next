@@ -2,26 +2,96 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ---------------------    fonts */
+
+/* inter */
+@font-face {
+	font-family: inter;
+	src: url("fonts/inter/Inter-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: inter;
+	src: url("fonts/inter/Inter-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+/* lato */
+@font-face {
+	font-family: lato;
+	src: url("fonts/lato/Lato-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: lato;
+	src: url("fonts/lato/Lato-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+/* poppins */
+@font-face {
+	font-family: poppins;
+	src: url("fonts/poppins/Poppins-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: poppins;
+	src: url("fonts/poppins/Poppins-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+/* salsa */
+@font-face {
+	font-family: salsa;
+	src: url("fonts/salsa/Salsa-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+/* vazir */
+@font-face {
+	font-family: vazir;
+	src: url("fonts/vazir/Vazir.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: vazir;
+	src: url("fonts/vazir/Vazir-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+/* irsans */
+@font-face {
+	font-family: irsans;
+	src: url("fonts/irsans/irsans.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+/*  */
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+	color: rgb(var(--foreground-rgb));
+	background: linear-gradient(
+			to bottom,
+			transparent,
+			rgb(var(--background-end-rgb))
+		)
+		rgb(var(--background-start-rgb));
 }

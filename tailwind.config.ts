@@ -7,6 +7,14 @@ const config: Config = {
 		"./app/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
+		fontFamily: {
+			inter: ["inter"],
+			lato: ["lato"],
+			poppins: ["poppins"],
+			salsa: ["salsa"],
+			vazir: ["vazir"],
+			irsans: ["irsans"],
+		},
 		extend: {},
 	},
 	plugins: [],
