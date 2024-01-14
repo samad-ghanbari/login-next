@@ -1,6 +1,4 @@
 import { NextResponse, NextRequest } from "next/server";
-//import { requestIP } from "request-ip";
-//import { redirect } from "next/navigation";
 
 // middleware.js
 export function middleware(request: NextRequest) {
@@ -35,7 +33,7 @@ function preEvaluateToken(token: any): boolean {
 }
 
 function networkAccess(request: NextRequest): boolean {
-	//const clientIp: string = requestIP.getClientIp(request);
-	//console.log(clientIp);
+	// graphql api to express backend
+
 	return true;
 }
