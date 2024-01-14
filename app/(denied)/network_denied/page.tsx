@@ -1,7 +1,6 @@
 import Image from "next/image";
-import ad_gif from "/public/image/denied/forbidden.gif";
-import ad from "/public/image/denied/denied.png";
-import Layout from "./layout";
+import ad_gif from "@/public/image/denied/forbidden.gif";
+import ad from "@/public/image/denied/denied.png";
 
 export default function accessDenied() {
 	return (

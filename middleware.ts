@@ -37,5 +37,5 @@ function preEvaluateToken(token: any): boolean {
 function networkAccess(request: NextRequest): boolean {
 	//const clientIp: string = requestIP.getClientIp(request);
 	//console.log(clientIp);
-	return false;
+	return true;
 }
