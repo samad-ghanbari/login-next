@@ -8,8 +8,9 @@ export default function accessDenied() {
 			<Image
 				alt="access denied user"
 				src={ad_gif}
-				layout="fill"
-				objectFit="cover"
+				//layout="fill"
+				//objectFit="cover"
+				fill
 				className="absolute blur-lg opacity-20 z-0"
 			/>
 

@@ -4,14 +4,29 @@ import logo from "@/public/image/logo.png";
 import LoginForm from "@/components/login/Form";
 import Reserved from "@/components/login/Reserved";
 
-export default function Home() {
+export default function Login(props: {
+	natidFlag?: boolean;
+	passwordFlag?: boolean;
+	captchaFlag?: boolean;
+	natid?: string;
+}) {
+	const natid: string = props.natid ? props.natid : "";
+	const natidClass: string = props.natidFlag
+		? "border-b-red-400"
+		: "border-b-blue-400";
+	const passwordClass: string = props.passwordFlag
+		? "border-b-red-400"
+		: "border-b-blue-400";
+	const captchaClass: string = props.captchaFlag
+		? "border-b-red-400"
+		: "border-b-blue-400";
+
 	return (
 		<div className="flex flex-wrap h-screen w-full bg-gray-400">
 			<Image
 				src={bgImage}
 				className="bg-cover absolute blur-xl z-0 opacity-40"
-				layout="fill"
-				objectFit="cover"
+				fill
 				alt=""
 			/>
 			<div className="w-full md:w-1/2 lg:w-1/3 flex items-center justify-center  border-none z-10">
@@ -20,7 +35,13 @@ export default function Home() {
 						ورود به سامانه
 					</h1>
 					<hr className="p-2 w-1/2 mx-auto" />
-					<LoginForm FormAction="" />
+					<LoginForm
+						FormAction="/login/submit"
+						natid={natid}
+						natidClass={natidClass}
+						passwordClass={passwordClass}
+						captchaClass={captchaClass}
+					/>
 					<Reserved classes="text-center text-gray-400 text-xs" />
 				</div>
 			</div>

@@ -39,6 +39,7 @@ export default function Captcha(props: {
 				name={inputName}
 				className={inputClass}
 				placeholder="Captcha"
+				required
 			/>
 		</div>
 	);
